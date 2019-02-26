@@ -1,5 +1,4 @@
-Download repo 
-Front End
+<b>Front End</b>
 
     1. Open Terminal
     2. cd Project/ClassProject/SpeechTextApp
@@ -7,7 +6,7 @@ Front End
 
     In order to test the api calls, the Django server must be running. Pleas follow the following instructions.
 
-Back End
+<b>Back End</b>
 
     1. Install python 3.7.0
     2. sudo pip3 install virtualenv or sudo python3 -m install virtualenv
@@ -19,7 +18,7 @@ Back End
 
     The folder hierarchy looks like
 
+![alt text](https://raw.githubusercontent.com/cesarl88/SpeechToTextApp/master/Images/Folder%20Structure.png)
 
-
-The front end will work on the SpeecTextApp folder
-The back end will work on the Server folder
+<h3>The front end will work on the SpeechTextApp folder under ClassProject folder</h3>
+<h3>The back end will work on the Server folder</h3>
