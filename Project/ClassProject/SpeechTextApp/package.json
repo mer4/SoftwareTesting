@@ -1,0 +1,7 @@
+{
+    "name": "speechtetapp",
+    "description": "Speech to Text web application",
+    "dependencies": {
+      "express": "^4.13.4"
+    }
+  } 
