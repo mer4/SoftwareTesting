@@ -19,36 +19,6 @@ Back End
 
     The folder hierarchy looks like
 
-   ClassProject/
-    ├── bin/
-    ├── include/  
-    ├── lib/
-    ├── ClassProject/
-    |   ├── Server/ (BackEnd Development)
-    |   |   ├── config/     
-    │   |   |   ├── __init__.py
-    │   |   |   ├── settings.py
-    │   |   |   ├── urls.py
-    │   |   |   └── wsgi.py
-    |   |   ├── __init__.py
-    |   |   ├── manage.py
-    |   |   └── url.py 
-    |   ├── SpeechTextApp/ (FrontEnd Development)   
-    |   |   ├── public/
-    |   |   |   ├── components/
-    |   |   |   |    ├── controllers/ (Javascript controllers files)
-    |   |   |   |    |    ├── login.control.js
-    |   |   |   |    ├── services/
-    |   |   |   |    ├── templates /(HTML Views)
-    |   |   |   |    |    ├── login.template.html
-    |   |   |   ├── app.js (Angular Application definition)
-    |   |   |   ├── appRoute.js (Angular Routes)
-    |   |   ├── bower.json
-    |   |   ├── package.json
-    |   |   ├── server.js (To Start Node server)
-    |   |   ├── README.me
-    |   |   ├── node_modules/
-    |   |   ├── bower_components
 
 
 The front end will work on the SpeecTextApp folder
