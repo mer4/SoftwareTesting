@@ -12,7 +12,7 @@ class TestNotAuthenticatedAPIView(APIView):
 
     def get(self, request):
 
-        return Response("TestNotAuthenticatedAPIView Get" + api_reverse("account-api:name = 'Login-View')"))
+        return Response("TestNotAuthenticatedAPIView: " + api_reverse("account-api:Register-View"))
 
     
 
