@@ -4,7 +4,7 @@ angular
 
     $stateProvider.state({
         name: 'login',
-        url: '/',
+        url: '/register',
         templateUrl: 'public/components/templates/login.template.html',
         controller: 'LoginController'
     });

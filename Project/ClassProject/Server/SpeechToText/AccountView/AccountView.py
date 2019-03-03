@@ -21,7 +21,7 @@ class RegistrationAPI(generics.GenericAPIView):
     permission_classes = [PublicEndpoint]
         
     def post(self, request, *args, **kwargs):
-        print("Here")
+        #print("Here")
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()

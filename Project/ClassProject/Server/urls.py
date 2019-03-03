@@ -29,5 +29,6 @@ urlpatterns += [
     #url(r'^api/auth/', include('knox.urls')),
     url(r'^test/', include('SpeechToText.TestViews.urls')),
     url(r'^account/', include(('SpeechToText.AccountView.urls','app-name'), namespace ='account-api')),
+    url(r'^account-files/', include(('SpeechToText.FileView.urls','app-name'), namespace ='account-file-api')),
 
 ]
