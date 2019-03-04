@@ -19,6 +19,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 from rest_framework_jwt.views import obtain_jwt_token
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,4 +33,6 @@ urlpatterns += [
     url(r'^account/', include(('SpeechToText.AccountView.urls','app-name'), namespace ='account-api')),
     url(r'^account-files/', include(('SpeechToText.FileView.urls','app-name'), namespace ='account-file-api')),
 
-]
+] 
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

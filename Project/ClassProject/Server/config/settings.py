@@ -135,3 +135,5 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',),
 }
+MEDIA_ROOT = os.path.join(BASE_DIR, '.','Files')
+MEDIA_URL = '/Files/'

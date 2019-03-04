@@ -9,7 +9,7 @@ from SpeechToText.models import File
 class UploadedFileView(mixins.CreateModelMixin,generics.ListAPIView):
     lookup_field            = 'id'
     serializer_class        = FileSerializer
-    permission_classes      = [IsOwner, PublicEndpoint]
+    permission_classes      = [IsOwner]
 
     def get_queryset(self, *args, **kwargs):
         qs = File.objects.filter(User = self.request.user)
@@ -27,3 +27,13 @@ class UploadedFileView(mixins.CreateModelMixin,generics.ListAPIView):
 
     def get_serializer_context(self, *args, **kwargs):
         return {"request": self.request}
+
+
+class DeleteFileView(generics.DestroyAPIView):
+    lookup_field            = 'id' 
+    serializer_class = FileSerializer
+    permission_classes = [IsOwner]
+    queryset = File.objects.all()
+    
+        
+   
