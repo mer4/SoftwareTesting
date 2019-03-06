@@ -39,7 +39,7 @@ class File(models.Model):
     Type = models.ForeignKey(FileType, on_delete = models.CASCADE)
     Transcript = models.TextField(null=True)
     UploadedDate = models.DateTimeField(default = timezone.now)
-    Content =models.FileField("UploadedFiles", upload_to=scramble_uploaded_filename, validators=[validate_file_extension])
+    Content =models.FileField("UploadedFiles", upload_to=scramble_uploaded_filename, validators=[validate_file_extension], blank=True, null=True)
     User = models.ForeignKey(User, on_delete = models.CASCADE)
 
     @property
