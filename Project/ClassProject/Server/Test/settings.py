@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import sys
 from django.db.backends.mysql.base import DatabaseWrapper
 DatabaseWrapper.data_types['DateTimeField'] = 'datetime' # fix for MySQL 5.5
 
@@ -80,16 +81,18 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-
 DATABASES = {
     'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST' : '50.62.209.224',
-        'NAME': 'speechtotext',#'test',
-        'USER': 'cls33',
-        'PASSWORD' : '!Bzti917'
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        #'HOST' : '50.62.209.224',
+        #'NAME': 'speechtotext',#'test',
+        #'USER': 'cls33',
+        #'PASSWORD' : '!Bzti917'
+        #'NAME': 'test',
+        #'User' : 'root',
+        #'password' : '15Agosto2010'
         
     }
 }
