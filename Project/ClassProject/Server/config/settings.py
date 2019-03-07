@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'SpeechToText',
     'rest_framework',
     'knox',
+    #'django_jenkins'
 
 
 ]
