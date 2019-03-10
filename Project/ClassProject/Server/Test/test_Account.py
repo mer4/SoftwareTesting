@@ -1,6 +1,7 @@
 import pytest
 import unittest
 from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
 
 @pytest.mark.django_db
 class TestAccount:

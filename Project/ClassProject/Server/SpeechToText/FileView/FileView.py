@@ -13,13 +13,14 @@ class UploadedFileView(mixins.CreateModelMixin,generics.ListAPIView):
 
     def get_queryset(self, *args, **kwargs):
         qs = File.objects.filter(User = self.request.user)
-        print('Checking')
-         
         if "id" in self.kwargs:
+            print('ID')
             qs = qs.filter(id = int(self.kwargs["id"])).distinct()
         return qs
 
     def perform_create(self, serializer):
+        print(self.request.user)
+        print(self.request.data)
         serializer.save(User=self.request.user)
 
     def post(self, request, *args, **kwargs):
