@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skipped="0" tests="9" time="2.520"><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="10" name="test_noAuthenticated" time="0.611"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="14" name="test_authenticated" time="0.132"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="18" name="test_register" time="0.276"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="28" name="test_register_no_user_name" time="0.143"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="38" name="test_register_no_user_password" time="0.139"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="48" name="test_login" time="0.277"><system-out>Here
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skipped="0" tests="13" time="4.932"><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="11" name="test_noAuthenticated" time="0.573"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="15" name="test_authenticated" time="0.179"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="19" name="test_register" time="0.434"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="29" name="test_register_no_user_name" time="0.195"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="39" name="test_register_no_user_password" time="0.221"></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="49" name="test_login" time="0.371"><system-out>Here
 cesar
-</system-out></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="55" name="test_login_wrong_username" time="0.252"><system-out>Here
-</system-out></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="62" name="test_login_wrong_password" time="0.262"><system-out>Here
-</system-out></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="69" name="test_login_wrong_credentials" time="0.262"><system-out>Here
+</system-out></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="56" name="test_login_wrong_username" time="0.337"><system-out>Here
+</system-out></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="63" name="test_login_wrong_password" time="0.382"><system-out>Here
+</system-out></testcase><testcase classname="Test.test_Account.TestAccount" file="Test/test_Account.py" line="70" name="test_login_wrong_credentials" time="0.374"><system-out>Here
+</system-out></testcase><testcase classname="Test.test_Files.TestFiles" file="Test/test_Files.py" line="53" name="test_PostAudioFileMp3" time="0.234"><system-out>1
+./Files/user_1/085c80e4-5a11-4dbb-aea4-91c255ddb2af.mp3
+cesar
+&lt;QueryDict: {&apos;Type&apos;: [&apos;1&apos;], &apos;Name&apos;: [&apos;Tes1&apos;], &apos;Content&apos;: [&lt;TemporaryUploadedFile: AudioTestFile1.mp3 (audio/mp3)&gt;]}&gt;
+1
+./Files/user_1/e42c709d-e3d2-403c-8cef-5e16e73e53c4.mp3
+</system-out></testcase><testcase classname="Test.test_Files.TestFiles" file="Test/test_Files.py" line="71" name="test_GetAudioFileList" time="0.233"><system-out>1
+./Files/user_1/400bd82b-12b6-41ea-b36e-2760c13cea42.mp3
+</system-out></testcase><testcase classname="Test.test_Files.TestFiles" file="Test/test_Files.py" line="84" name="test_GetAudioFileByID" time="0.199"><system-out>1
+./Files/user_1/7dcdcef5-fa6f-4273-9d45-1f9329e4135a.mp3
+ID
+</system-out></testcase><testcase classname="Test.test_Files.TestFiles" file="Test/test_Files.py" line="96" name="test_DeleteAudioFileByID" time="0.279"><system-out>1
+./Files/user_1/b0043e56-ae9b-4923-a321-70dba1199993.mp3
 </system-out></testcase></testsuite>

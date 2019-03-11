@@ -15,6 +15,7 @@ from django.db.models import Q
 
 from rest_framework import serializers
 from django.contrib.auth.models import User
+#from rest_framework.authtoken.models import Token
 
 class RegistrationAPI(generics.GenericAPIView):
     serializer_class = CreateUserSerializer
@@ -25,6 +26,7 @@ class RegistrationAPI(generics.GenericAPIView):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
+        #token = Token.objects.create(user=user)
         return Response({
             "user": UserSerializer(user, context=self.get_serializer_context()).data,
             "token": AuthToken.objects.create(user)
@@ -43,6 +45,7 @@ class LoginAPI(generics.GenericAPIView):
         
         user = serializer.validated_data
         print(user)
+        #token = Token.objects.create(user=user)
         return Response({
             "user": UserSerializer(user, context=self.get_serializer_context()).data,
             "token": AuthToken.objects.create(user)
